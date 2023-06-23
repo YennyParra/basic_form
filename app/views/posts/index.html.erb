@@ -1,0 +1,15 @@
+<h1>Mostranso todos los "Posts</h1>
+
+<p>Cantidad de posts: <%= @posts.count %></p>
+
+<% @posts.each do |post| %>
+<h2><%= post.title %></h2>
+<p><%= post.content%></p>
+  
+<% end %>
+
+<div>
+
+<%= link_to "Agreagendo nuevo posts", posts_new_path %>
+</div>
+
